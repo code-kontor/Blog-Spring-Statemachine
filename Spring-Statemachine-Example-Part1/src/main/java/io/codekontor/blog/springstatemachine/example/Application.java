@@ -7,6 +7,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import io.codekontor.blog.springstatemachine.example.service.IExampleService;
+
 /**
  * Example application to illustrate the usage of the Spring Statemachine Framework.
  * 

@@ -1,8 +1,7 @@
-package io.codekontor.blog.springstatemachine.example;
+package io.codekontor.blog.springstatemachine.example.service.impl;
 
 import java.util.EnumSet;
 
-import org.springframework.context.annotation.Configuration;
 import org.springframework.statemachine.config.EnableStateMachine;
 import org.springframework.statemachine.config.EnumStateMachineConfigurerAdapter;
 import org.springframework.statemachine.config.builders.StateMachineConfigurationConfigurer;
@@ -14,7 +13,6 @@ import org.springframework.statemachine.config.builders.StateMachineTransitionCo
  * 
  * @author Gerd W&uuml;therich (gw@code-kontor.io)
  */
-@Configuration
 @EnableStateMachine
 public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States, Trigger> {
 
@@ -24,7 +22,9 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
 	@Override
 	public void configure(StateMachineConfigurationConfigurer<States, Trigger> config) throws Exception {
 
-		config.withConfiguration().autoStartup(true);
+		config
+			.withConfiguration()
+			.autoStartup(true);
 	}
 
 	/**
@@ -33,7 +33,11 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
 	@Override
 	public void configure(StateMachineStateConfigurer<States, Trigger> states) throws Exception {
 
-		states.withStates().initial(States.INITIAL).end(States.TERMINATED).states(EnumSet.allOf(States.class));
+		states
+			.withStates()
+			.initial(States.INITIAL)
+			.end(States.TERMINATED)
+			.states(EnumSet.allOf(States.class));
 	}
 
 	/**

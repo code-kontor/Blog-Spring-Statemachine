@@ -1,4 +1,4 @@
-package io.codekontor.blog.springstatemachine.example;
+package io.codekontor.blog.springstatemachine.example.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,6 +7,8 @@ import org.springframework.statemachine.StateContext;
 import org.springframework.statemachine.StateMachine;
 import org.springframework.statemachine.annotation.OnStateEntry;
 import org.springframework.statemachine.annotation.WithStateMachine;
+
+import io.codekontor.blog.springstatemachine.example.service.IExampleService;
 
 /**
  * The implementation of the example service.

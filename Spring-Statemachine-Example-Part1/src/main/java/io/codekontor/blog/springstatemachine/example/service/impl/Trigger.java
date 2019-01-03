@@ -1,4 +1,4 @@
-package io.codekontor.blog.springstatemachine.example;
+package io.codekontor.blog.springstatemachine.example.service.impl;
 
 /**
  * Defines the external triggers of the state machine.
