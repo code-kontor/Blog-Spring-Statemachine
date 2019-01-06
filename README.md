@@ -1,6 +1,6 @@
 # Blog-Spring-Statemachine
 
-This repository holds the source code for Spring Statemachine blog at https://code-kontor.io/blog (german only):
+This repository holds the source code for the Spring Statemachine blog at https://code-kontor.io/blog (german only):
 
 * https://code-kontor.io/blog/2019/spring-statemachine-framework-teil-1/
 
